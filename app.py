@@ -212,10 +212,6 @@ class SpellApp:
             case _:
                 lineType = line_shapes.straight
 
-
-        # Convert the level to lowercase in case of "None"
-        level = level.lower()
-
         # Convert the concentration and ritual values to booleans
         if concentration=="Yes":
             concentration = True
@@ -304,9 +300,6 @@ class SpellApp:
             bases.golden: "Golden"
         }[shape])
         self.lineType_var.set("Centre Circle" if lineType == line_shapes.centre_circle else "Straight")
-
-        # Convert the level to lowercase in case of "None"
-        level = level.lower()
 
         # Generate the spell image
         image = self.create_spell_image(level, rang, area, dtype, school,duration, condition, concentration, ritual, shape, lineType)
