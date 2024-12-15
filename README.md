@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
 
 ## Current Development
-Currently the project is pretty much finished - I justh have to solve the duplicate spell problem
+Currently the project is pretty much finished - I just have to solve the duplicate spell problem
 
 I'll continue to make minor improvements/add features upon request but otherwise I'm calling it a success.
 
