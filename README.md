@@ -38,7 +38,10 @@ Concentration: False
 Ritual: False
 Matching spells: Frostbite, Ray of Frost
 ```
-And so I have to find a way to add unique identifiers. I've only finished cantrips but I imagine this will be common considering that there are only 32 cantrips and other levels like Level 2 have 61. 
+
+There are 22 spells that have duplicates. Grouping by same attributes there are 10 sets of duplicates. 
+
+Some of these duplicates I feel don't need modification (such as Magic Missle and Jim's Magic Missle). In the `duplicates.md` file, I listed the ones I feel are acceptable and passable. Acceptable being ones I feel are allowed to have duplicates, passable being spells that are extremely similar such as two summon spells, one being for a demon, one being for a fey. 
 
 ### Contains Duplicates:
 - [X] Level 0 (Cantrips) 
@@ -50,9 +53,10 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
 
 ### Possible Solutions:
 - ~~Add conditions~~
+    - Helped eliminate a few duplicates
 - ~~Add damage of spells~~
     - Doesn't work with spells that don't have damage (`Elementalism`, `Mold Earth`, `Shape Water`)
-- Add casting time of spells (unlikely)
+- ~~Add casting time of spells (unlikely)~~
     - Most casting spells take 1 action
 - Add category of spell
     - Control, Communication, Detection, Deception, etc.

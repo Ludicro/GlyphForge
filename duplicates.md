@@ -30,6 +30,7 @@ Matching spells: Frostbite, Ray of Frost
 
 # Level 1
 
+**Acceptable**
 ```
 Spells with attributes:
 School: Evocation
@@ -99,6 +100,7 @@ Matching spells: Magic Weapon, Rope Trick
 
 # Level 3
 
+**Passable**
 ```
 Spells with attributes:
 School: Conjuration
@@ -114,6 +116,7 @@ Matching spells: Summon Fey, Summon Shadowspawn
 
 # Level 4
 
+**Passable**
 ```
 Spells with attributes:
 School: Conjuration
@@ -129,6 +132,7 @@ Matching spells: Summon Aberration, Summon Construct, Summon Elemental
 
 # Level 5
 
+**Acceptable** - these are the exact same spell - I'm not sure why D&DBeyond has them both as different things.
 ```
 Spells with attributes:
 School: Conjuration
