@@ -3,7 +3,6 @@ import GlyphEngine.line_shapes as line_shapes
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-from tqdm.auto import tqdm
 import json
 
 cmap = plt.get_cmap('turbo')
@@ -18,7 +17,7 @@ def cycle_list(l, loops=1):
 def generate_unique_combinations(L):
     combinations = generate_binary_strings(L)
     non_repeating = [combinations[0]]
-    for i in tqdm(range(len(combinations)), desc="Generating Unique Binary Numbers"):
+    for i in range(len(combinations)):
         ref = list(combinations[i])
         N = len(ref)
         test = 0
@@ -33,17 +32,25 @@ def generate_unique_combinations(L):
         non_repeating[i] = [int(s) for s in list(non_repeating[i])]
     return non_repeating
 
+
 def generate_binary_strings(bit_count):
+    # List to store all binary strings
     binary_strings = []
+    
+    # Helper function to recursively generate binary strings
     def genbin(n, bs=''):
+        # Base case: if binary string length equals desired bit count, add it to list
         if len(bs) == n:
             binary_strings.append(bs)
         else:
+            # Recursive case: append both 0 and 1 to current string and continue
             genbin(n, bs + '0')
             genbin(n, bs + '1')
 
+    # Start recursive generation with initial bit count
     genbin(bit_count)
     return binary_strings
+
 
 #-------Functions for drawing runes
 def decode_shape(in_array, k=1, point_color='k', on_color='darkred', off_color="grey",
